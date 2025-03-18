@@ -40,7 +40,7 @@ const Validator = () => {
     formData.append("threshold", threshold);
 
     axios
-      .post("http://127.0.0.1:8000/validate_obe/", formData, {
+      .post("obevalidatorbackend-production.up.railway.app/validate_obe/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
